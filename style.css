@@ -51,6 +51,10 @@ body {
   line-height: normal;
   box-sizing: border-box;
   border: none;
+  transition: all 0.3s;
+}
+.header__button:hover {
+  background: #EB443F;
 }
 
 .games {
@@ -65,6 +69,13 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+.games__icons:hover {
+  border: 3px solid #44D2FF;
+  border-radius: 16px;
+  box-sizing: border-box;
 }
 .games__icons_1 {
   background-image: url(img/game1.png);
@@ -88,4 +99,44 @@ body {
   line-height: 32px;
   padding-bottom: 32px;
   padding-left: 32px;
+}
+
+@media (max-width: 767px) {
+  .games {
+    display: flex;
+    justify-content: center;
+  }
+  .games__icons {
+    width: 343px;
+    border-radius: 15px;
+  }
+  .games__icons-block {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 32.29px;
+    margin-bottom: 127.88px;
+  }
+  .header {
+    background-position-x: 31%;
+    height: 735px;
+    display: flex;
+    justify-content: center;
+  }
+  .header_inform {
+    text-align: center;
+    padding: 0;
+    padding-top: 238px;
+  }
+  .header__title {
+    font-size: 32px;
+    width: 343px;
+    padding-bottom: 32.95px;
+  }
+  .header__text {
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+    padding-bottom: 32.95px;
+  }
 }/*# sourceMappingURL=style.css.map */
