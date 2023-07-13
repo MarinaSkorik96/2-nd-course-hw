@@ -5,7 +5,31 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-.header {
+.text {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+.button {
+  border-radius: 30px;
+  background: #9C0332;
+  width: 234.063px;
+  height: 48.603px;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  box-sizing: border-box;
+  border: none;
+  transition: all .3s;
+  &:hover {
+    background: #EB443F;
+  }
+}.header {
   background-image: url(img/fon.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -25,34 +49,13 @@ body {
     padding-bottom: 32px;
   }
   &__text {
-    color: #FFF;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 32px;
     width: 481px;
     padding-bottom: 44px;
     &_span {
       font-weight: 600;
     }
   }
-  &__button {
-    border-radius: 30px;
-    background: #9C0332;
-    width: 234.063px;
-    height: 48.603px;
-    color: #FFF;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    box-sizing: border-box;
-    border: none;
-    transition: all .3s;
-    &:hover {
-      background: #EB443F;
-    }
-  }
+
 }
 .games {
   background-color: #000915;
@@ -96,14 +99,43 @@ body {
       padding-left: 32px;  
     }
   }
+  &__title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 32px;
+  }
+  &__inform {
+    padding-top: 282px;
+    padding-bottom: 459px;
+    padding-left: 120px;
+    width: 584px;
+  }
+}
+.game_1 {
+  display: flex;
+  gap:135px;
+  &_png {
+    padding-top: 233.5px;
+    padding-right: 116px;
+  }
 }
 @media (max-width: 767px) {
+  .title {
+    font-size: 32px;
+  }
   .games {
     display: flex;
     justify-content: center;
     &__icons {
       width: 343px;
       border-radius: 15px;
+    }
+    &__inform{
+      width: 343px;
     }
   }
 .games__icons-block {
@@ -125,15 +157,21 @@ body {
 
   }
   &__title {
-    font-size: 32px;
-    width: 343px;
     padding-bottom: 32.95px;
+    width: 343px;
   }
   &__text {
     font-size: 14px;
     line-height: 22px;
     width: 343px;
     padding-bottom: 32.95px;
+  }
+}
+.game_1 {
+  flex-direction: column;
+  &_png {
+    width: 344px;
+    height: 236px;
   }
 }
 }
