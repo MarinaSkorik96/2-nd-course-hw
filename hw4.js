@@ -1,16 +1,16 @@
-// //Задание 1
+//Задание 1
 let hello = 1;
 while (hello <=2) {
   console.log ('Привет');
   hello++;
 }
 
-// //Задание 2
+//Задание 2
 for (let number = 1; number <=5; number++){
   console.log (number);
 }
 
-// //Задание 3 (сделала 2 решения)
+//Задание 3 (сделала 2 решения)
 for (let number = 7; number >=7  && number <=22; number++){
   console.log (number);
 }
@@ -52,8 +52,8 @@ for ( let fridey = 7; fridey <=31; fridey ++){
     console.log (`Сегодня пятница ${fridey}-е число. Необходимо подготовить отчет.`)
   }
 }
-//  Почему тут не работает такой код?:
-// for ( let fridey = 7; fridey <=31; fridey +7){
-//     console.log (`Сегодня пятница ${fridey}-е число. Необходимо подготовить отчет.`)
-// }
+// Еще один вариант решения
+for ( let fridey = 7; fridey <=31; fridey = fridey+7){
+    console.log (`Сегодня пятница ${fridey}-е число. Необходимо подготовить отчет.`)
+}
 
