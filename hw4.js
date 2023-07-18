@@ -56,4 +56,7 @@ for ( let fridey = 7; fridey <=31; fridey ++){
 for ( let fridey = 7; fridey <=31; fridey = fridey+7){
     console.log (`Сегодня пятница ${fridey}-е число. Необходимо подготовить отчет.`)
 }
-
+//Не работает
+for ( let fridey = 7; fridey <=31;  fridey+7){
+  console.log (`Сегодня пятница ${fridey}-е число. Необходимо подготовить отчет.`)
+}

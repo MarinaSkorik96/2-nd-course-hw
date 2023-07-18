@@ -76,6 +76,7 @@ body {
   justify-content: flex-start;
   box-sizing: border-box;
   transition: all 0.3s;
+  text-decoration: none;
 }
 .games__icons:hover {
   border: 3px solid #44D2FF;
@@ -116,7 +117,7 @@ body {
 }
 .games__inform {
   padding-top: 282px;
-  padding-bottom: 459px;
+  padding-bottom: 282.4px;
   padding-left: 120px;
   width: 584px;
 }
@@ -144,6 +145,13 @@ body {
   }
   .games__inform {
     width: 343px;
+    padding-left: 16px;
+    padding-top: 51px;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .games__title {
+    font-size: 32px;
   }
   .games__icons-block {
     flex-direction: column;
@@ -161,7 +169,7 @@ body {
   .header_inform {
     text-align: center;
     padding: 0;
-    padding-top: 238px;
+    padding-top: 238.69px;
   }
   .header__title {
     padding-bottom: 32.95px;
@@ -169,14 +177,23 @@ body {
   }
   .header__text {
     font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
     line-height: 22px;
     width: 343px;
-    padding-bottom: 32.95px;
+    padding-bottom: 0.95px;
   }
   .game_1 {
     flex-direction: column;
+    gap: 64px;
   }
   .game_1_png {
+    padding: 0px 15px 85.01px 16px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .img {
     width: 344px;
     height: 236px;
   }
