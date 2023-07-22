@@ -1,4 +1,4 @@
-// Задание 1 
+// // Задание 1 
 // function findSmallest(a, b) {
 //   if (a<=b) {
 //     return(a);
@@ -8,7 +8,7 @@
 //   }
 // }
 
-// или
+// // или
 
 // let findSmallest = (a,b) => {
 //   if (a<=b) {
@@ -23,7 +23,7 @@
 // console.log (findSmallest(8,4));
 // console.log (findSmallest(6,6));
 
-// Задание 2
+// // Задание 2
 // let evenNotEven = (f) => {
 // if (f % 2 === 0) {
 //   return ("Число четное");
@@ -33,21 +33,21 @@
 // }
 // console.log (evenNotEven(prompt ("Введите число")));
 
-// Задание 3.1 
+// // Задание 3.1 
 // let squaring = (s) => s*s;
 // console.log (squaring(prompt ("Введите число")));
 
-// или
+// // или
 // let squaring = (s) => s**2;
 // console.log (squaring(prompt ("Введите число")));
 
-// Задание 3.2
+// // Задание 3.2
 // let squaring = (s = prompt ("Введите число")) => {
 //   return s*s;
 // }
 // console.log(squaring());
 
-// Задание 4 
+// // Задание 4 
 // let ageVerification = (age = prompt ("Сколько вам лет?")) => {
 //   if (age < 0) {
 //     alert ('Вы ввели не правильное число');
@@ -59,7 +59,7 @@
 //   }
 //   ageVerification();
 
-// еще один вариант 
+// // еще один вариант 
 // let ageVerification = (age = prompt ("Сколько вам лет?")) => {
 //   if (age < 0) {
 //     alert ('Вы ввели не правильное число');
@@ -71,7 +71,7 @@
 //   }
 //   ageVerification();
 
-// Задание 5 
+// // Задание 5 
 // let mult = (c = prompt ("Введите первое число"), g = prompt ("Введите второе число")) => {
 //   if (isNaN (c) || isNaN(g)){
 //     return alert('Одно или оба значения не являются числом');
@@ -81,7 +81,7 @@
 // }
 // mult();
 
-// Задание 6 
+// // Задание 6 
 // let squaring2 = ( userNumber = prompt ("Введите число")) => {
 //   if (isNaN (userNumber)){
 //     return alert('Переданный параметр не является числом');
@@ -91,7 +91,7 @@
 // }
 // squaring2();
 
-// Задание 7 
+// // Задание 7 
 
 // const circle1 = {
 //   radius: 12,
@@ -117,7 +117,7 @@
 // console.log (circle2.getArea());
 // console.log (circle2.getPerimetr());
 
-// Второе решение 
+// // Второе решение 
 // function getArea() {
 //   return Math.PI * this.radius**2;
 // };
@@ -143,7 +143,7 @@
 // console.log (circle2.getArea());
 // console.log (circle2.getPerimetr());
 
-// Задание 8 
+// // Задание 8 
 // let seasons = (userNumber = prompt ("Введите номер месяца")) => {
 //   if (isNaN (userNumber)){
 //     return alert('Вы ввыли не номер месяца');
