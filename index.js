@@ -13,3 +13,20 @@ let seasons = (userNumber = prompt ("Введите номер месяца")) =
     return  alert (`На Земле такого месяца нет`);
   }
 }
+
+const game2 = () => {
+  const arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+  newArr = arr.map(el => 
+  ' ' + el);
+  newArr.sort(() => Math.random() - 0.5);
+  alert(`Запомните слова: ${newArr}`);
+  const firstUserAnswer = ' ' + prompt (`Какое было первое слово?`);
+  const secondUserAnswer =  ' ' + prompt (`Какое было последнее слово?`);
+  if (firstUserAnswer.toLowerCase() === newArr[0].toLowerCase() && secondUserAnswer.toLowerCase() === newArr[6].toLowerCase()) {
+    alert (`Поздравляю, у тебя прекрасная память!`)
+  } else if (firstUserAnswer.toLowerCase() === newArr[0].toLowerCase() || secondUserAnswer.toLowerCase() === newArr[6].toLowerCase()){
+    alert (`Вы были близки к победе!`)
+  } else {
+    alert (`Не верно, попробуй еще раз!`)
+  }};
+ 
