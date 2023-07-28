@@ -23,9 +23,9 @@
   </header>
   <section id="games" class="games">
     <div class="games__icons-block">
-      <div class="games__icons games__icons_1">
+      <a href="#game1" class="games__icons games__icons_1">
         <div class="games__icons-text">Игра 1</div>
-        </div>
+      </a>
       <div class="games__icons games__icons_2">
         <div class="games__icons-text">Игра 2</div>
       </div>
@@ -35,20 +35,17 @@
     </div>
   </section>
   <section class="games">
-    <div class="game_1">
+    <div id="game1" class="game_1">
       <div class="games__inform">
         <h1 class="games__title" >Времена года!</h1>
         <p class="text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</span></p>
-        <a href="#">
-          <button class="button">Поехали!</button>    
-        </a>
+        <button onclick="seasons()" class="button">Поехали!</button>    
       </div>
       <div class="game_1_png">
-        <img src="img/undraw_video_game_night_8h8m 1.png" alt="Времена года">
+        <img class="img" src="img/undraw_video_game_night_8h8m 1.png" alt="Времена года">
       </div>
-  
     </div>
-
   </section>
+  <script src="index.js"></script>
 </body>
 </html>
